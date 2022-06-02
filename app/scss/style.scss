@@ -1,0 +1,203 @@
+@import "global";
+@import "fonts";
+
+.header {
+    background-image: url(../images/header-bg.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.menu__list {
+    display: flex;
+    font-family: "sf-pro-display", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+.menu__item {
+    margin-right: 30px;
+}
+.menu__link {
+    transition: color 0.5s;
+}
+.menu__link:hover {
+    color: rgba(203, 14, 14, 1);
+}
+
+.phone {
+    margin-left: auto;
+}
+
+.login {
+    margin-right: 134px;
+    margin-left: 22px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.header__content {
+    max-width: 600px;
+}
+.header__title {
+    font-family: "spaceagecyrillic", sans-serif;
+    color: white;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.header__title span {
+    font-size: 110px;
+    line-height: 110px;
+}
+
+.header__text {
+    font-family: "sf-pro-display", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.header__btn {
+    font-family: "sf-pro-display", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    line-height: 28px;
+    padding: 15px 10px 16px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 100%;
+}
+.header__description {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-bottom: 5%;
+}
+
+.header__description-text {
+    font-family: "sf-pro-display", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-block;
+    max-width: 165px;
+}
+.header__description-text + .header__description-text {
+    margin-left: 50px;
+}
+
+//start section ABOUT
+.about {
+    background-image: url(../images/about-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about__item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+    flex-wrap: wrap;
+}
+.about__item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.about__img {
+    max-width: 100%;
+}
+.about__content {
+    max-width: 600px;
+    color: white;
+}
+.about__content-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: white;
+    margin-bottom: 5px;
+}
+.about__content-subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #036cca;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.about__content-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.about__content-text p {
+    max-width: 165px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    font-style: normal;
+}
+.about__table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+.about__table-caption {
+    caption-side: bottom;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #e5e5e5;
+    text-align: left;
+}
+
+.about__table-tr {
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.about__table-tr + .about__table-tr {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about__table-td {
+    padding: 10px 30px 10px 0;
+}
+.about__table-td span {
+    font-size: 14px;
+    line-height: 17px;
+    display: block;
+}
+//end section ABOUT
