@@ -210,7 +210,7 @@
     font-size: 48px;
     line-height: 48px;
     font-weight: 400;
-    margin-bottom: 100px;
+    padding: 100px 0;
 }
 .how-to__box {
     text-align: center;
@@ -245,3 +245,40 @@ foreignObject {
 }
 
 //end section HOW-TO
+
+//start section TO_BOOK
+
+.to-book {
+    background-image: url(../images/to-book-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.to-book__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+.to-book__title {
+    font-family: "spaceagecyrillic";
+    color: white;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+}
+.to-book__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: white;
+    max-width: 165px;
+    margin-left: auto;
+    margin-right:52px;
+ }
+ .to-book__text + .to-book__text{
+     margin-left: 0;
+     margin-right: 0;
+   
+ }
+//end section TO_BOOK
