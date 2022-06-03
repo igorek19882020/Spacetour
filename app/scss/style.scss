@@ -97,7 +97,6 @@
     margin-top: 40px;
     margin-bottom: 5%;
 }
-
 .header__description-text {
     font-family: "sf-pro-display", sans-serif;
     color: white;
@@ -110,7 +109,6 @@
 .header__description-text + .header__description-text {
     margin-left: 50px;
 }
-
 //start section ABOUT
 .about {
     background-image: url(../images/about-bg.jpg);
@@ -118,7 +116,6 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
 .about__item {
     display: flex;
     justify-content: space-between;
@@ -175,7 +172,6 @@
     color: #e5e5e5;
     text-align: left;
 }
-
 .about__table-tr {
     border: 1px solid white;
     border-left: none;
@@ -184,14 +180,12 @@
     line-height: 19px;
     font-weight: 400;
 }
-
 .about__table-tr + .about__table-tr {
     font-size: 36px;
     line-height: 43px;
     font-weight: 700;
     text-align: center;
 }
-
 .about__table-td {
     padding: 10px 30px 10px 0;
 }
@@ -201,3 +195,53 @@
     display: block;
 }
 //end section ABOUT
+
+//start section HOW-TO
+.how-to {
+    background-image: url(../images/howto-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+.how-to__title {
+    font-family: "spaceagecyrillic";
+    color: white;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+.how-to__box {
+    text-align: center;
+    color: white;
+}
+.how-to__box circle,
+.how-to__box text {
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.how-to__box g:hover {
+    r: 20px;
+    fill: #036cca;
+}
+.how-to__box g:hover text {
+    fill: #036cca;
+    cursor: pointer;
+    font-size: 36px;
+}
+g:hover circle {
+    fill: #036cca;
+    r: 20px;
+    cursor: pointer;
+}
+foreignObject {
+    text-align: left;
+}
+.how-to__box g:hover foreignObject {
+    font-size: 21px;
+    cursor: pointer;
+    color: #036cca;
+}
+
+//end section HOW-TO
