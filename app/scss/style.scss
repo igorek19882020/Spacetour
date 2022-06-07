@@ -506,3 +506,52 @@ foreignObject {
     margin-left: auto;
 }
 //end section CONTACTS
+
+//start footer
+.footer{
+    background-image: url(../images/footer-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 150px;
+}
+.footer__inner{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__text{
+    width: 165px;
+    margin-right: 50px;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+.footer p + p{
+    margin-top: 50px;
+}
+.footer__menu{
+    width: 120px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 95px;
+}
+.footer__menu-item,
+.footer__links-item{
+    margin-bottom: 20px;
+}
+
+.footer__links{
+    width: 165px;
+    font-size: 16px;
+    line-height: 19px;
+}
+.footer__menu-link,
+.footer__links-link{
+    text-transform: uppercase;
+    transition: color .5s;
+}
+.footer__menu-link:hover,
+.footer__links-link:hover{
+color: red;
+}
+//end footer
