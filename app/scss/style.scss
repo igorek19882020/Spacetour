@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 80px;
+    padding: 75px 0px 30px;
 }
 
 .menu__list {
@@ -41,7 +41,6 @@
 .phone {
     margin-left: auto;
 }
-
 .login {
     margin-right: 134px;
     margin-left: 22px;
@@ -500,7 +499,6 @@ foreignObject {
     font-weight: 400;
 }
 .contacts__guarantees-img {
-    
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
@@ -508,50 +506,81 @@ foreignObject {
 //end section CONTACTS
 
 //start footer
-.footer{
+.footer {
     background-image: url(../images/footer-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0 150px;
 }
-.footer__inner{
+.footer__inner {
     display: flex;
     justify-content: flex-end;
 }
-.footer__text{
+.footer__text {
     width: 165px;
     margin-right: 50px;
     font-size: 16px;
     line-height: 19px;
-
 }
-.footer p + p{
+.footer p + p {
     margin-top: 50px;
 }
-.footer__menu{
+.footer__menu {
     width: 120px;
     font-size: 16px;
     line-height: 19px;
     margin-right: 95px;
 }
 .footer__menu-item,
-.footer__links-item{
+.footer__links-item {
     margin-bottom: 20px;
 }
 
-.footer__links{
+.footer__links {
     width: 165px;
     font-size: 16px;
     line-height: 19px;
 }
 .footer__menu-link,
-.footer__links-link{
+.footer__links-link {
     text-transform: uppercase;
-    transition: color .5s;
+    transition: color 0.5s;
 }
 .footer__menu-link:hover,
-.footer__links-link:hover{
-color: red;
+.footer__links-link:hover {
+    color: red;
 }
 //end footer
+
+.menu__btn {
+    display: none;
+    width: 40px;
+    padding: 0px;
+    position: relative;
+    z-index: 20;
+    border: 0;
+}
+.menu__btn span {
+    display: block;
+    height: 2px;
+    background-color: white;
+    position: relative;
+}
+.menu__btn span::before,
+.menu__btn span::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+}
+.menu__btn span::before {
+    top: -10px;
+    left: 0;
+}
+.menu__btn span::after {
+    top: 10px;
+    left: 0;
+}
+@import "media";
