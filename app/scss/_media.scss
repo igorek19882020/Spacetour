@@ -1,3 +1,28 @@
+@media (max-width: 1160px) {
+    .about__item {
+        display: block;
+    }
+    .about__content {
+        width: 100%;
+    }
+    .about__content-text {
+        display: block;
+    }
+    .about__content-text p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about__img {
+        margin-bottom: 50px;
+    }
+    .about {
+        text-align: center;
+    }
+    .about__table {
+        width: 100%;
+    }
+}
+
 @media (max-width: 1100px) {
     .login {
         margin-right: 0;
@@ -47,6 +72,33 @@
     .header {
         background-position: center right;
     }
+    .how-to__box svg {
+        display: none;
+    }
+    .how-to__box-list {
+        display: block;
+    }
+    .how-to__box-item {
+        padding-bottom: 30px;
+        text-align: left;
+        padding-left: 30px;
+        margin-left: 20px;
+        position: relative;
+        border-left: 1px solid white;
+    }
+    .how-to__box-item:last-child {
+        border-left: none;
+    }
+    .how-to__box-item::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        top: 0px;
+        left: -10px;
+    }
 }
 @media (max-width: 630px) {
     .header__content {
@@ -82,6 +134,44 @@
     .header__description-text + .header__description-text {
         margin-left: 0;
         margin-top: 20px;
+    }
+    .title {
+        padding: 50px 0;
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .about__item {
+        padding-bottom: 50px;
+    }
+    .about__table-tr:first-child {
+        display: none;
+    }
+    .about__table-td {
+        display: block;
+        text-align: right;
+        border-bottom: 1px solid white;
+    }
+    .about__table-td:last-child {
+        border: none;
+    }
+    .about__table-td span {
+        display: inline-block;
+    }
+
+    .about__table-td::before {
+        content: attr(aria-label);
+        float: left;
+    }
+    .about__table-tr + .about__table-tr {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+}
+@media (max-width: 480px) {
+    .how-to__title {
+        font-size: 28px;
+        line-height: 28px;
     }
 }
 @media (max-width: 420px) {
